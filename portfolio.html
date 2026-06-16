@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Rufus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="gridlines"></div>
+
+<div class="statusbar">
+  <div><span class="dot"></span>SYSTEM ONLINE — ALL SERVICES OPERATIONAL</div>
+  <div class="right"><span id="liveClock">00:00:00</span><span>LAGOS, NG</span></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="path">rufus</span>@portfolio</div>
+    <ul class="navlinks" id="navLinks">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+  <div class="pagehead wrap">
+    <div class="crumb">~/<span class="seg">portfolio</span></div>
+    <h1>Selected Work</h1>
+  </div>
+
+  <section class="section" style="padding-top:32px;">
+    <div class="wrap">
+
+      <div class="filterbar reveal">
+        <button class="filterbtn active" data-filter="all">all</button>
+        <button class="filterbtn" data-filter="network">networking</button>
+        <button class="filterbtn" data-filter="cloud">cloud</button>
+        <button class="filterbtn" data-filter="web">web dev</button>
+      </div>
+
+      <div class="projects">
+
+        <div class="pcard reveal" data-cat="network">
+          <div class="pcard-top"><span class="ptype">networking</span><span class="pstate">● stable</span></div>
+          <div class="pcard-body">
+            <h3>MikroTik Branch Routing Setup</h3>
+            <p>Configured IP addressing and routing across branch devices on MikroTik RouterOS, including VLAN segmentation and connectivity diagnostics.</p>
+            <div class="stack"><span class="tag">RouterOS</span><span class="tag">VLAN</span><span class="tag">IP Addressing</span></div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="network">
+          <div class="pcard-top"><span class="ptype">networking</span><span class="pstate">● stable</span></div>
+          <div class="pcard-body">
+            <h3>Hardware Diagnostics &amp; NOC Support</h3>
+            <p>Performed device-level diagnostics — from laptop charger/battery faults to Windows configuration issues — in a live network operations setting.</p>
+            <div class="stack"><span class="tag">Hardware</span><span class="tag">Windows</span><span class="tag">NOC</span></div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="cloud">
+          <div class="pcard-top"><span class="ptype">cloud</span><span class="pstate">● in progress</span></div>
+          <div class="pcard-body">
+            <h3>Cloud Infrastructure Fundamentals</h3>
+            <p>Applying networking principles to cloud-hosted environments — exploring provisioning, scaling, and monitoring patterns for resilient systems.</p>
+            <div class="stack"><span class="tag">Cloud Infra</span><span class="tag">Monitoring</span><span class="tag">Scalability</span></div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="web">
+          <div class="pcard-top"><span class="ptype">web dev</span><span class="pstate">● building</span></div>
+          <div class="pcard-body">
+            <h3>JavaScript Sign-In / Authentication Page</h3>
+            <p>A single-file HTML/JS sign-in page handling client-side form logic and validation — built while learning core browser and DOM behavior.</p>
+            <div class="stack"><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">DOM</span></div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="web">
+          <div class="pcard-top"><span class="ptype">web dev</span><span class="pstate">● learning</span></div>
+          <div class="pcard-body">
+            <h3>Node.js &amp; Express Exploration</h3>
+            <p>Working through Node.js fundamentals — the event loop, npm package management, and building simple Express.js routes for real-time use cases.</p>
+            <div class="stack"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">npm</span></div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="web">
+          <div class="pcard-top"><span class="ptype">web dev</span><span class="pstate">● building</span></div>
+          <div class="pcard-body">
+            <h3>This Portfolio Site</h3>
+            <p>A from-scratch, multi-page personal site — no frameworks — handling navigation state, scroll reveals, filtering, and form validation in plain JavaScript.</p>
+            <div class="stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla JS</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Rufus. Built with <span class="path">HTML / CSS / JS</span> — no frameworks.</div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rufus — IT Technologist | Networking · Cloud · Web</title>
+<meta name="description" content="Rufus — IT Technologist specializing in computer networking, cloud engineering, and web development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="gridlines"></div>
+
+<div class="statusbar">
+  <div><span class="dot"></span>SYSTEM ONLINE — ALL SERVICES OPERATIONAL</div>
+  <div class="right"><span id="liveClock">00:00:00</span><span>LAGOS, NG</span></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="path">rufus</span>@portfolio</div>
+    <ul class="navlinks" id="navLinks">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="reveal in">
+          <div class="eyebrow">status: actively building</div>
+          <h1>Rufus — <span class="accent">IT Technologist</span><br>networks, cloud &amp; the web.</h1>
+          <p class="lede">I design and maintain the infrastructure things run on, and build the interfaces people use to reach them — from routed networks and cloud workloads to the websites sitting on top.</p>
+          <div class="cta-row">
+            <a href="portfolio.html" class="btn btn-primary">View Portfolio →</a>
+            <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="reveal in">
+          <div class="term">
+            <div class="term-head">
+              <span class="tdot t1"></span><span class="tdot t2"></span><span class="tdot t3"></span>
+              <span class="title">rufus@portfolio — zsh</span>
+            </div>
+            <div class="term-body" id="termBody"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><div class="num"><span data-counter="3" data-suffix="">0</span></div><div class="label">core disciplines</div></div>
+        <div class="stat"><div class="num"><span data-counter="99" data-suffix="%">0%</span></div><div class="label">uptime mindset</div></div>
+        <div class="stat"><div class="num"><span data-counter="24" data-suffix="/7">0</span></div><div class="label">monitoring habit</div></div>
+        <div class="stat"><div class="num"><span data-counter="0" data-suffix="-day">0</span></div><div class="label">tolerance for downtime</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAINS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow reveal">core domains</div>
+      <h2 style="font-size:30px; margin-bottom:14px;" class="reveal">Three disciplines, one stack</h2>
+      <p style="color:var(--muted); max-width:560px;" class="reveal">Each domain below reinforces the others — networking knowledge informs how I architect cloud environments, and both inform how I build and ship web applications.</p>
+
+      <div class="domains">
+        <div class="node reveal">
+          <div class="node-head">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5V12M12 12L6.5 17M12 12l5.5 5"/></svg>
+            </div>
+            <div class="node-status"><span class="d"></span>UP</div>
+          </div>
+          <h3>Computer Networking</h3>
+          <p>Routing, switching, and infrastructure design — keeping traffic moving and networks resilient under load.</p>
+          <div class="node-skills">
+            <span class="tag">MikroTik RouterOS</span><span class="tag">VLANs</span><span class="tag">TCP/IP</span><span class="tag">NOC Ops</span><span class="tag">Diagnostics</span>
+          </div>
+        </div>
+
+        <div class="node reveal">
+          <div class="node-head">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 1 1 .7-7.94A5.5 5.5 0 0 1 18 12a3.5 3.5 0 0 1 0 7H7Z"/></svg>
+            </div>
+            <div class="node-status"><span class="d"></span>UP</div>
+          </div>
+          <h3>Cloud Engineering</h3>
+          <p>Provisioning and managing scalable, cost-aware cloud environments built for reliability.</p>
+          <div class="node-skills">
+            <span class="tag">Cloud Infra</span><span class="tag">Scalability</span><span class="tag">Monitoring</span><span class="tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="node reveal">
+          <div class="node-head">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>
+            </div>
+            <div class="node-status"><span class="d"></span>UP</div>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building functional, well-structured front ends — from static sites to interactive JavaScript-driven pages.</p>
+          <div class="node-skills">
+            <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Express</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section class="section" style="border-bottom:none;">
+    <div class="wrap" style="text-align:center;">
+      <div class="eyebrow reveal" style="justify-content:center;">ready when you are</div>
+      <h2 style="font-size:28px; margin-bottom:18px;" class="reveal">Have infrastructure, cloud, or web work in mind?</h2>
+      <a href="contact.html" class="btn btn-primary reveal">Start a conversation →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Rufus. Built with <span class="path">HTML / CSS / JS</span> — no frameworks.</div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
